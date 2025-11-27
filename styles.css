@@ -1,10 +1,28 @@
-/* CSS by ///ADD/// YOUR NAME */
+/* CSS by Carlos Ochoa-Sanchez */
 
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* ///ADD/// CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+  
+}
 
+/* Remove browser default padding + margins if code is messing up, update this */ 
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
+  
+  padding: 0;
+}
+
+/* Reset body defaults */
+body {
+  line-height: 1.5;
+  
+}
 
 /* Root Variables */
 :root {
@@ -39,8 +57,61 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+a.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
 
 /* ///ADD/// Navigation Styles */
+header {
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.mobile-nav {
+  margin-top: 1.5rem;
+}
+
+/* make the list horizontal and centered */
+.mobile-nav .menu {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;            
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-nav .menu li {
+  margin: 0;
+}
+
+/* make each link look like a button */
+.mobile-nav .menu a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--news-flash);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0;               
+  border: none;}
+
+/* hover / focus state */
+.mobile-nav .menu a:hover,
+.mobile-nav .menu a:focus {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);  
+  background-color: black;      
+}
+
 
 /* ///ADD/// Global Layout Styles */
 
@@ -62,4 +133,55 @@ body.dark-mode {
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
 
+}
+
+#social {
+  background-color: var(--blue-bulletin);       
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: left;
+}
+
+/* Footer heading */
+#social h2 {
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+  
+}
+
+/* Social link row */
+#social .social-links {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Button-style links */
+#social .social-links a {
+  display: inline-block;
+  background-color: var(--news-flash);
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  
+}
+
+/* Button hover */
+#social .social-links a:hover {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);  
+  background-color: black;      
+}
+
+/* Copyright */
+#social p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
