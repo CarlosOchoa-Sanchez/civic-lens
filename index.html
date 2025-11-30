@@ -59,88 +59,134 @@
         <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
       
       <section id="breaking-news">
-      <h2>Breaking News</h2>
+  <h2>Breaking News</h2>
 
-        <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-        <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-         <video controls autoplay> 
-          <source src="videos/water-management.mp4" type="video/mp4">
-        </video>
-        
-        <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-        <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-         <video controls autoplay> 
-          <source src="videos/voter-suppression.mp4" type="video/mp4">
-        </video>
-      </section>
-      
+  <div class="news-grid">
+    <article class="news-card" id="federal">
+      <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+      <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+      <video controls>
+        <source src="videos/water-management.mp4" type="video/mp4">
+      </video>
+    </article>
+    
+    <article class="news-card" id="voter">
+      <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+      <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+      <video controls>
+        <source src="videos/voter-suppression.mp4" type="video/mp4">
+      </video>
+    </article>
+  </div>
+</section>
+    
+<!-- Featured Articles section begins here -->
       <section id="featured-articles">  
       <h2>Featured Articles</h2>
-        
-        <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-        <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
-        
-        
-        <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-        <p>An investigative series on cash bail and its disproportionate impact on marginalized communities.</p>
-  
-        
-        <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-        <p>Humanizing the labor that keeps households and economies afloat.</p>
 
-        <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-        <p>Data visualization showing systemic inequality in real estate today.</p>
+      <div class="featured-grid">
 
-        <h3>Climate Injustice: Who Pays for Pollution?</h3>
-        <p>Communities of color bear the brunt of environmental damage.</p>
+      <article class="featured-card">
+      <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+      <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+      </article>
 
-        <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-        <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+      <article class="featured-card">
+      <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+      <p>An investigative series on cash bail and its disproportionate impact on marginalized communities.</p>
+      </article>
 
-        <h3>Food Deserts and Corporate Abandonment</h3>
-        <p>Why access to nutrition is a zip code lottery.</p>
+      <article class="featured-card">
+      <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+      <p>Humanizing the labor that keeps households and economies afloat.</p>
+      </article>
 
-        <h3>Policing Mental Health: A Broken Response System</h3>
-        <p>Examining police interactions with those in crisis.</p>
+      <article class="featured-card">
+      <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+      <p>Data visualization showing systemic inequality in real estate today.</p>
+      </article>
 
-        <h3>The Disinformation Economy</h3>
-        <p>Tracing profit motives behind fake news empires.</p>
+      <article class="featured-card">
+      <h3>Climate Injustice: Who Pays for Pollution?</h3>
+      <p>Communities of color bear the brunt of environmental damage.</p>
+      </article>
 
-        <h3>Facing the Algorithm: AI and Racial Bias</h3>
-        <p>The coded inequalities that shape our lives.</p>
+      <article class="featured-card">
+      <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+      <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+      </article>
 
-        <h3>The Voting Maze</h3>
-        <p>A guide to understanding your rights amid changing laws.</p>
+      <article class="featured-card">
+      <h3>Food Deserts and Corporate Abandonment</h3>
+      <p>Why access to nutrition is a zip code lottery.</p>
+      </article>
 
-        <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-        <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
-      </section>
+      <article class="featured-card">
+      <h3>Policing Mental Health: A Broken Response System</h3>
+      <p>Examining police interactions with those in crisis.</p>
+      </article>
 
-      <section id="alerts">  
-        <h2>Stay Informed. Stay Empowered.</h2>
-        <p>Receive text messages with the news you want to know.</p>
+      <article class="featured-card">
+      <h3>The Disinformation Economy</h3>
+      <p>Tracing profit motives behind fake news empires.</p>
+      </article>
 
-        <form id="subscribe-form" action="https://wp.zybooks.com/form-viewer.php" method="post" aria-label="Subscription Form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+      <article class="featured-card">
+      <h3>Facing the Algorithm: AI and Racial Bias</h3>
+      <p>The coded inequalities that shape our lives.</p>
+      </article>
 
-          <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" required>
+      <article class="featured-card">
+      <h3>The Voting Maze</h3>
+      <p>A guide to understanding your rights amid changing laws.</p>
+      </article>
 
-          <fieldset>
-            <legend>Notification Preferences</legend>
-            <label><input type="checkbox" name="preferences[]" value="breaking-news"> Breaking News</label>
-            <label><input type="checkbox" name="preferences[]" value="politics"> Politics</label>
-            <label><input type="checkbox" name="preferences[]" value="weather"> Weather</label>
-            <label><input type="checkbox" name="preferences[]" value="sports"> Sports</label>
-            <label><input type="checkbox" name="preferences[]" value="entertainment"> Entertainment</label>
-            <label><input type="checkbox" name="preferences[]" value="world"> World</label>
-            <label><input type="checkbox" name="preferences[]" value="financial"> Financial</label>
-          </fieldset>
+      <article class="featured-card">
+      <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+      <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+      </article>
+  </div>
+</section>
 
-          <button type="submit">Subscribe</button>
-        </form>
-        </section>
+<!-- Alerts section begins here -->
+  <section id="alerts">  
+  <h2>Stay Informed. Stay Empowered.</h2>
+  <p>Receive text messages with the news you want to know.</p>
+
+  <form id="subscribe-form" action="https://wp.zybooks.com/form-viewer.php"
+        method="post" aria-label="Subscription Form">
+
+    <!-- Contact info in its own fieldset -->
+    <fieldset class="contact-info">
+      <legend class="visually-hidden">Contact information</legend>
+
+      <label class="name-field" for="name">
+        Name
+        <input type="text" id="name" name="name" required>
+      </label>
+
+      <label class="mobile-field" for="mobile">
+        Mobile
+        <input type="tel" id="mobile" name="mobile" required>
+      </label>
+    </fieldset>
+
+    <!-- Notification preferences fieldset -->
+    <fieldset class="prefs">
+      <legend>Notification Preferences</legend>
+
+      <label><input type="checkbox" name="preferences[]" value="breaking-news"> Breaking News</label>
+      <label><input type="checkbox" name="preferences[]" value="politics"> Politics</label>
+      <label><input type="checkbox" name="preferences[]" value="weather"> Weather</label>
+      <label><input type="checkbox" name="preferences[]" value="sports"> Sports</label>
+      <label><input type="checkbox" name="preferences[]" value="entertainment"> Entertainment</label>
+      <label><input type="checkbox" name="preferences[]" value="world"> World</label>
+      <label><input type="checkbox" name="preferences[]" value="financial"> Financial</label>
+    </fieldset>
+
+    <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+  </form>
+</section>
       
         </main>
 
