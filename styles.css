@@ -78,17 +78,17 @@ a.skip-link {
 header {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
-  padding: 1rem 1rem 1rem;   /* FIX: tighten header padding */
+  padding: 1rem 1rem 1rem;   
   box-shadow: var(--shadow);
 }
 
 header h1 {
-  margin: 0 0 .25rem 0;     /* FIX: reduce space under title */
-  font-size: 2rem;          /* adjust if needed */
+  margin: 0 0 .25rem 0;     
+  font-size: 2rem;          
 }
 
 header p {
-  margin: 0 0 .75rem 0;     /* FIX: reduce space before nav */
+  margin: 0 0 .75rem 0;     
 }
 
 .mobile-nav {
